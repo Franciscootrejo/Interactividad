@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Texto con efecto</title>
+  <title>Metro Chilpancingo</title>
+  <!-- Enlace a la biblioteca p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <!-- Enlace a la tipografía "owltail" -->
   <style>
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
-      background-color:rgba(0, 0, 0, 0.3)
-      font-family: Arial, sans-serif;
+      overflow: hidden; /* Evitar scroll */
+      font-family: "Owltail", sans-serif;
     }
-
     .text-effect {
       font-size: 3rem;
       font-weight: bold;
@@ -30,9 +28,13 @@
       transform: scaleX(1.2);
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
+
   </style>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div class="text-effect">Metro Chilpancingo</div>
+
+  <script src="./js/chat.js"></script>
 </body>
 </html>
